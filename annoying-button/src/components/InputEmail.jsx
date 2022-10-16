@@ -10,7 +10,8 @@ class InputEmail extends Component {
             E-mail:
             {' '}
             <input type="email" id="email" />
-            <button type="button">Salvar</button>
+            <br />
+            <button type="button" className="btn-escape">Salvar</button>
           </label>
         </form>
       </div>

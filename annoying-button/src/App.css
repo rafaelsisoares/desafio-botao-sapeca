@@ -29,8 +29,39 @@
 }
 
 .input-container {
+  border: 1px solid black;
   display: flex;
   flex-flow: column wrap;
+  margin: auto;
+  width: 45%;
+}
+
+.btn-stay {
+
+}
+
+.btn-escape {
+  background-color: aquamarine;
+  padding: 10px;
+  margin-top: 10px;
+  position: relative;
+  left: 0;
+  width: 30%;
+  
+}
+
+.btn-escape:hover {
+  animation: btn-escape 50ms linear 0s 1 normal both;
+    /* left: 50%;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -ms-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s; */
+}
+
+.btn-escape {
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 @keyframes App-logo-spin {
@@ -40,4 +71,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes btn-escape {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100px);
+	}
 }
